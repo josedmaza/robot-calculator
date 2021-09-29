@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/shapes.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
+
+    <title>Geometric Shapes</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <nav class="nav-items">
+            <a href="../index.html"><img class="js-image" src="../assets/js-logo2.jpg" width="70px" height="70px"
+                    alt="" /></a>
+            <a class="me" href="https://www.linkedin.com/in/jose-daniel-mazaa/" target="blank">@josedmaza</a>
+        </nav>
+    </header>
+    <main>
+        <section class="main-section--inside">
+            <h1>Geometric Shapes</h1>
+            <!--Cuadrado-->
+            <section class="workshop-card order1">
+                <img src="../assets/square.png" alt="" />
+                <h2>Squares</h2>
+                <form id="square">
+                    <div class="form-group">
+                        <label for="inputCuadrado">How long is each side of your square in cm: <br /></label>
+                        <input type="number" name="lado" id="inputCuadrado" min="1" />
+                        <p class="error" id="errorCL1"></p>
+                    </div>
+                    <button class="btn-form btn-square-p" type="button">
+                        Get perimeter
+                    </button>
+                    <button class="btn-form btn-square-a" type="button">
+                        Get area
+                    </button>
+                </form>
+                <div class="answer">
+                    <div class="answer-container">
+                        <p id="respuesta-cuadrado">Result</p>
+                    </div>
+                </div>
+            </section>
+            <!--Triangulo-->
+            <section class="workshop-card order3">
+                <img src="../assets/triangle.png" alt="" />
+                <h2>Triangle</h2>
+                <form id="triangle">
+                    <div class="form-group">
+                        <label for="">What are the mesurements of your triangle in cm</label>
+                        <label for="inputTriagulo1">Side A: <br /> </label>
+                        <input type="number" name="lado" id="inputTriangulo1" min="1" />
+                        <p id="errorT1" class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputTriagulo2">Side B: <br /></label>
+                        <input type="number" name="lado" id="inputTriangulo2" min="1" />
+                        <p id="errorT2" class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputTriagulo1">Base: <br /></label>
+                        <input type="number" name="lado" id="inputBase" min="1" />
+                        <p id="errorTBase" class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputTriagulo1">Height: <br /></label>
+                        <input type="number" name="lado" id="inputHeight" min="1" />
+                        <p id="errorTAltura" class="error"></p>
+                    </div>
+                    <button class="btn-form btn-triangle-p" type="button">
+                        Get perimeter
+                    </button>
+                    <button class="btn-form btn-triangle-a" type="button">
+                        Get area
+                    </button>
+                </form>
+                <div class="answer">
+                    <div class="answer-container">
+                        <p id="respuesta-triangulo">Result</p>
+                    </div>
+                </div>
+            </section>
+            <!--Circulo-->
+            <section class="workshop-card order2">
+                <img src="../assets/circle.png" alt="" />
+                <h2>Circles</h2>
+                <form id="circle">
+                    <div class="form-group">
+                        <label for="inputCirculo">What is the radius of your circle in cm? <br /></label>
+                        <input type="number" name="lado" id="inputCirculo" min="1" />
+                        <p class="error" id="errorCirculo"></p>
+                    </div>
+                    <button class="btn-form btn-circle-d" type="button">
+                        Get diammeter
+                    </button>
+                    <button class="btn-form btn-circle-p" type="button">
+                        Get perimeter
+                    </button>
+                    <button class="btn-form btn-circle-a" type="button">
+                        Get area
+                    </button>
+                </form>
+                <div class="answer">
+                    <div class="answer-container">
+                        <p id="respuesta-circulo">Result</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="nav-works nav-works--inside">
+            <div class="card">
+                <div class="card__item border" onclick="location.href='./Descuentos.html'">
+                    <img src="../assets/price.png" alt="" />
+                    <div>
+                        <header>
+                            <h4>workshop #2</h4>
+                            <h2>Prices and disccounts</h2>
+                        </header>
+                        <p>Calculo básicos para precios, descuentos y cupones de pago.</p>
+                    </div>
+                </div>
+                <div class="card__item border" onclick="location.href='./PromedioModaMediana.html'">
+                    <img src="../assets/discount.png" alt="" />
+                    <div>
+                        <header>
+                            <h4>workshop #3</h4>
+                            <h2>Promedios, Moda y Mediana</h2>
+                        </header>
+                        <p>Calculo para Promedios, Moda y Mediana</p>
+                    </div>
+                </div>
+                <div class="card__item border" onclick="location.href='./primaVacaciones.html'">
+                    <img src="../assets/dollar.png" alt="" />
+                    <div>
+                        <header>
+                            <h4>workshop #4</h4>
+                            <h2>Prima y vacaiones</h2>
+                        </header>
+                        <p>Calculo básicos para trabajar con salarios</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/figuras.js"></script>
+</body>
+
+</html>

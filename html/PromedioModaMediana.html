@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio, moda, mediana</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/average-icon.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/70a46f3fdb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="nav-bar">
+        <nav class="nav-items">
+            <a href="../index.html"><img class="js-image" src="../assets/js-logo2.jpg" width="70px" height="70px"
+                    alt=""></a>
+            <a class="me" href="https://www.linkedin.com/in/jose-daniel-mazaa/" target="blank">@josedmaza</a>
+        </nav>
+    </header>
+    <main>
+        <section class="main-section--inside">
+            <h1>Calcula el promedio,media y moda con solo un click</h1>
+            <section class="workshop-card prom-card">
+                <h2>Promedio, mediana y moda</h2>
+                <div class="form-group form-container">
+                    <form id="prom">
+                        <label for="data">Ingresa tus datos: <br></label>
+                        <input type="text" name="data" id="input-data" min="1">
+                    </form>
+                </div>
+                <div class="buttons-container">
+                    <button class="media-btn btn-form" id="media-btn" type="button">Media</button>
+                    <button class="mediana-btn btn-form" id="mediana-btn" type="button">Mediana</button>
+                    <button class="moda-btn btn-form" id="moda-btn" type="button">Moda</button>
+                </div>
+                <div class="container-card-result">
+                    <div class="card-result">
+                        <p id="resultadoEstadistica">Resultado estadistica</p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        <section class="nav-works nav-works--inside">
+            <div class="card">
+                <div class="card__item border" onclick="location.href='./figuras.html'">
+                    <img src="../assets/circle.png" alt="">
+                    <div>
+                        <header>
+                            <h4>workshop #1</h4>
+                            <h2>Geometric Shapes</h2>
+                        </header>
+                        <p>Basic calculation for Squares, Triangles and Circles.</p>
+                    </div>
+                </div>
+                <div class="card__item border" onclick="location.href='./Descuentos.html'">
+                    <img src="../assets/price.png" alt="">
+                    <div>
+                        <header>
+                            <h4>workshop #2</h4>
+                            <h2>Prices and disccounts</h2>
+                        </header>
+                        <p>Calculo básicos para precios, descuentos y cupones de pago.</p>
+                    </div>
+                </div>
+                <div class="card__item border" onclick="location.href='./primaVacaciones.html'">
+                    <img src="../assets/dollar.png" alt="">
+                    <div>
+                        <header>
+                            <h4>workshop #4</h4>
+                            <h2>Prima y vacaiones</h2>
+                        </header>
+                        <p>Calculo básicos para trabajar con salarios</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/promedio.js"></script>
+
+</body>
+
+</html>

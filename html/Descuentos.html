@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../assets/sale-icon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/70a46f3fdb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="nav-bar">
+        <nav class="nav-items">
+            <a href="../index.html"><img class="js-image" src="../assets/js-logo2.jpg" width="70px" height="70px"
+                    alt="" /></a>
+            <a class="me" href="https://www.linkedin.com/in/jose-daniel-mazaa/" target="blank">@josedmaza</a>
+        </nav>
+    </header>
+    <main>
+        <section class="main-section--inside">
+            <h1>Discount</h1>
+            <section class="card-container workshop-card">
+                <div class="msg-coupon">
+                    <img src="../assets/platzi-challenge.png" alt="" />
+                    <p>Platzi Coupon</p>
+                </div>
+                <img src="../assets/discount.png" alt="" />
+                <form id="square">
+                    <div class="form-group">
+                        <label for="price">What is the price of your product? <br /></label>
+                        <input type="number" name="price" id="input-price" min="1" />
+                        <p class="error" id="errorCL1"></p>
+                        <label for="discount">What is your discount</label>
+                        <input type="number" name="discount" id="input-discount" min="1" />
+                        <div class="coupon-card">
+                            <label for="coupon">Coupon</label>
+                            <input class="input-coupon" type="text" name="coupon" id="input-coupon"
+                                placeholder="Example:fastidiosa" />
+                        </div>
+                    </div>
+                    <button class="btn-form" type="button">Get price</button>
+                </form>
+                <div class="answer">
+                    <div class="answer-container">
+                        <p id="answer-price">Result</p>
+                    </div>
+                </div>
+            </section>
+            <section class="taller-card">
+                <h2>Lista de Cupones disponibles</h2>
+                <ol>
+                    <strong></strong>
+                    <li><strong>-> </strong>fastidiosa</li>
+                    <li><strong>-> </strong>platzi</li>
+                    <li><strong>-> </strong>brave</li>
+                </ol>
+            </section>
+        </section>
+        <section class="nav-works nav-works--inside">
+            <div class="card">
+                <div class="card__item border" onclick="location.href='./figuras.html'">
+                    <img src="../assets/circle.png" alt="" />
+                    <div>
+                        <header>
+                            <h4>workshop #1</h4>
+                            <h2>Geometric Shapes</h2>
+                        </header>
+                        <p>Basic calculation for Squares, Triangles and Circles.</p>
+                    </div>
+                </div>
+                <div class="card__item border" onclick="location.href='./primaVacaciones.html'">
+                    <img src="../assets/discount.png" alt="" />
+                    <div>
+                        <header>
+                            <h4>workshop #3</h4>
+                            <h2>Promedios, Moda y Mediana</h2>
+                        </header>
+                        <p>Calculo para Promedios, Moda y Mediana</p>
+                    </div>
+                </div>
+                <div class="card__item border" onclick="location.href='./analisisSalarial.html'">
+                    <img src="../assets/dollar.png" alt="" />
+                    <div>
+                        <header>
+                            <h4>workshop #4</h4>
+                            <h2>Prima y vacaiones</h2>
+                        </header>
+                        <p>Calculo básicos para trabajar con salarios</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/descuentos.js"></script>
+</body>
+
+</html>

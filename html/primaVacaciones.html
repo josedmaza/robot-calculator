@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prima y vacaciones</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/salary-icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/70a46f3fdb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="nav-bar">
+        <nav class="nav-items">
+            <a href="../index.html"><img class="js-image" src="../assets/js-logo2.jpg" width="70px" height="70px"
+                    alt=""></a>
+            <a class="me" href="https://www.linkedin.com/in/jose-daniel-mazaa/" target="blank">@josedmaza</a>
+        </nav>
+    </header>
+    <main>
+        <section class="title">
+            <h1>Calcule cuanto le debe llegar de prima y vacaciones</h1>
+        </section>
+        <section class="main-section--inside">
+            <section class="calculadora-container">
+                <div class="prima-calculadora">
+                    <form id="prima">
+                        <h2>Liquidador de la prima legal</h2>
+                        <p>Ingrese su salario mensual</p>
+                        <div class="input-value">
+                            <span>$</span>
+                            <input type="number" name="input-salary" id="input-salary"> <br>
+                        </div>
+                        <p>Dias trabajados</p>
+                        <div class="slider-box">
+                            <div class="slider">
+                                <div class="range-values">
+                                    <span>0</span>
+                                    <span>360</span>
+                                </div>
+                                <input type="range" name="input-days" id="input-days" min="0" max="360" value="90"
+                                    oninput="document.getElementById('vDays').innerHTML = this.value">
+                                <div class="days-container"><label id="vDays"></label></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="calc-btn" id="get-result-prima">Calcular prima</div>
+                            <div class="calc-btn" id="get-result-vacation">Calcular vacaiones</div>
+                        </div>
+                    </form>
+                    <div class="result">
+                        <p>El valor de su prima es:</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="nav-works nav-works--inside">
+            <div class="card">
+                <div class="card__item border" onclick="location.href='./figuras.html'">
+                    <img src="../assets/circle.png" alt="">
+                    <div>
+                        <header>
+                            <h4>workshop #1</h4>
+                            <h2>Geometric Shapes</h2>
+                        </header>
+                        <p>Basic calculation for Squares, Triangles and Circles.</p>
+                    </div>
+                </div>
+                <div class="card__item border" onclick="location.href='./PromedioModaMediana.html'">
+                    <img src="../assets/discount.png" alt="">
+                    <div>
+                        <header>
+                            <h4>workshop #3</h4>
+                            <h2>Promedios, Moda y Mediana</h2>
+                        </header>
+                        <p>Calculo para Promedios, Moda y Mediana</p>
+                    </div>
+                </div>
+                <div class="card__item border" onclick="location.href='./Descuentos.html'">
+                    <img src="../assets/price.png" alt="">
+                    <div>
+                        <header>
+                            <h4>workshop #2</h4>
+                            <h2>Prices and disccounts</h2>
+                        </header>
+                        <p>Calculo básicos para precios, descuentos y cupones de pago.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/primaVacaciones.js"></script>
+</body>
+
+</html>
