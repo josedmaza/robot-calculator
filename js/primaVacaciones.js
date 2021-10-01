@@ -20,7 +20,8 @@ const getPrima = ()=> {
     } else if (daysValue >180) {
         renderResult.innerHTML = `<p>Los dias de trabajo no deben superar los 180 dias<p>`;
     } else {
-        renderResult.innerHTML = `<p>Tu prima es de <strong>-> ${prima.toFixed(2)}</strong></p>`;
+        let numero = new Intl.NumberFormat('es-MX').format(prima.toFixed(2));
+        renderResult.innerHTML = `<p>Tu prima es de <strong>-> ${numero}</strong></p>`;
     }
 }
 
@@ -37,7 +38,8 @@ const getVacaciones = ()=> {
     if(prima < 0) {
         renderResult.innerHTML = `Datos incorrectos`;
     } else {
-        renderResult.innerHTML = `<p>el valor por tus vacaciones es de <strong>-> ${vacaciones.toFixed(2)}</strong></p>`;
+        let numero = new Intl.NumberFormat('es-MX').format(vacaciones.toFixed(2));
+        renderResult.innerHTML = `<p>El valor de tus vacaciones es de  <strong>-> ${numero}</strong></p>`;
     }
 }
 
